@@ -14,8 +14,8 @@ fs.readFile("index.html", 'utf8', function (err,data) {
   }
   console.log(data);
 text=data;
-  });
   response.send(text);
+  });
 });
 
 var port = process.env.PORT || 5000;
